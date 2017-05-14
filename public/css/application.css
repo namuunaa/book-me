@@ -1,0 +1,42 @@
+nav {
+  font-family: 'Amatic SC', cursive;
+}
+
+.navbar-brand, .nav {
+  font-size: 2em;
+}
+
+.index-bg {
+  background-color: powderblue; 
+}
+
+.container-fluid {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+#logout-button {
+  text-align: center;
+  text-decoration: none;
+  padding: 15px 15px;
+  border: transparent;
+  background-color: transparent;
+  color: #777;
+  line-height: 20px;
+}
+
+#logout-button:hover {
+  color: #333;
+}
+
+.footer-bg {
+  background-color: #f8f8f8;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.book-info {
+  list-style-type: none;
+}
+
+

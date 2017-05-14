@@ -1,0 +1,9 @@
+<p>Browse the bookshelf:</p>
+
+<ul class="book-info">
+  <%@books.each do |book|%>
+    <li id="book-title"><a href="/books/<%=book.id%>"><%=book.title%></a></li>
+    <li id="book-author">by <%=book.author%></li>
+  <%end%>
+</ul>
+

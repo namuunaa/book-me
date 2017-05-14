@@ -1,0 +1,16 @@
+<h3>MY BOOKSHELF</h3>
+
+<div>
+  <ol><%@user.books.each do |book|%>
+    <li id="book-title"><a href="/books/<%=book.id%>"><%=book.title%></a></li>
+    <li id="book-author">by <%=book.author%></li>
+    <%end%>
+  </0l>
+</div>
+
+<div><%= erb :'books/_new'%></div>
+
+
+
+
+

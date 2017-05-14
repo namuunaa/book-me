@@ -1,0 +1,14 @@
+<h3>Add a book to your shelf: </h3>
+<form action="/users/<%=current_user.id%>/books" method="post">
+  <label>Title: </label>
+  <input type="text" name="book[title]"><br>
+  <label>Author: </label>
+  <input type="text" name="book[author]"><br>
+  <label>Genre: </label>
+  <input type="text" name="book[genre]"><br>
+  <label>Brief Description: </label>
+  <input type="text" name="book[body]"><br>
+  <input type="submit" value="Add Book">
+</form>
+
+<% erb :'/_errors' %>

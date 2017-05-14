@@ -1,0 +1,22 @@
+<h3><%=@book.title.capitalize%></h3>
+
+<ul class="book-info">
+  <li>Author: <%=@book.author%></li>
+  <li>Genre: <%=@book.genre%></li>
+  <li>Synopsis: <%=@book.body%></li>
+  <li>Book owner: <%=@user.name%></li>
+</ul>
+
+<p>Message <a href="/users/<%=@user.id%>"><%=@user.name%></a></p>
+
+<% if current_user && current_user.id == @book.owner_id%>
+  <ul>
+    <li><a href="/users/<%=@book.owner_id%>/books/edit"> Edit Book</a></li>
+    <li>
+      <form method="post" action="/books/<%=@book.id%>">
+      <input type="hidden" name="_method" value="delete">
+      <input type="submit" value="Delete">
+    </form>
+    </li>
+  </ul>
+<%end%>
